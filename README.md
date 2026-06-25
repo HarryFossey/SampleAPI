@@ -31,7 +31,7 @@ Run the following commands from the Package Manager Console:
 Add-Migration InitialMigration -Project SampleAPI.Database -StartupProject SampleAPI
 
 # Apply the migration to the database
-Update-Database -Project SampleAPI.Database -StartupProject SampleAPI
+Update-Database -Project SampleAPI.Database -StartupProject SampleAPI.Database -Args "{ConnectionStrings:CustomerOrder}"
 ```
 
 ---
